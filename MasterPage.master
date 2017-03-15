@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Welcome to TimothyMolloy.com</title>
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            background-color: white;
+        }
+        .auto-style2 {
+            height: 482px;
+            background-color: #3399FF;
+        }
+        .auto-style3 {
+            height: 173px;
+            text-align: center;
+            font-size: xx-large;
+            background-color: white;
+        }
+        .auto-style4 {
+            width: 100%;
+            height: 845px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        Header
+        <table class="auto-style4">
+            <tr>
+                <td colspan="2" class="auto-style3">
+                    <h1 style="font-family: 'Droid Sans Mono'">Welcome to TimothyMolloy.com!</h1>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </td>
+                <td class="auto-style2"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="auto-style1">&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
